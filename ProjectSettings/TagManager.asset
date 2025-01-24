@@ -3,22 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Key1
+  - Key2
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Teleport
+  - Key
+  - Chip
+  - Chest
+  - Metal
+  - Ankh
+  - Walls
+  - Anubis
   - 
   - 
   - 
