@@ -18,6 +18,15 @@ public class AnubisController : MonoBehaviour
         animator.SetBool("isActive", false);
     }
 
+    public void DoorOpen()
+    {
+        if (isActivated)
+        {
+            // Cambiar a la animación de idle
+            animator.SetBool("doorOpen", true);
+        }
+    }
+
     // Método para activar a Anubis cuando se accione el trigger
     public void ActivateAnubis()
     {
@@ -25,7 +34,7 @@ public class AnubisController : MonoBehaviour
         {
             isActivated = true;
 
-            // Cambiar a la animación de idle
+            // Cambiar a la animación de pointing
             animator.SetBool("isActive", true);
         }
     }

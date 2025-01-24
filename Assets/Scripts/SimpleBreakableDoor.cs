@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class SimpleBreakableDoor : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class SimpleBreakableDoor : MonoBehaviour
     public AudioClip collapseSound; // Sonido durante el derrumbe
     public int hitsToBreak = 6; // Número de golpes necesarios para romper
     public float collapseDuration = 3f; // Duración del derrumbe antes de desactivar piezas
+    public AnubisController anubis;
 
     private int currentHits = 0; // Contador de golpes
     private bool isBroken = false; // Flag para evitar ejecutar varias veces
@@ -28,6 +30,9 @@ public class SimpleBreakableDoor : MonoBehaviour
             {
                 AudioSource.PlayClipAtPoint(impactSound, other.transform.position);
             }
+
+            XRDirectInteractor interactor = other.GetComponent<XRDirectInteractor>();
+            interactor.SendHapticImpulse(0.5f, 0.25f);
 
             // Verificar si se ha alcanzado el límite de golpes
             if (currentHits >= hitsToBreak)
@@ -58,6 +63,8 @@ public class SimpleBreakableDoor : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(collapseSound, transform.position);
         }
+
+        anubis.DoorOpen();
 
         // Desactivar las piezas tras un tiempo
         StartCoroutine(DisableBrokenPiecesAfterDelay());
