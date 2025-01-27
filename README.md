@@ -33,11 +33,3 @@
 
 - The project was originally intended for standalone VR devices, but performance limitations make it best suited for PC-based VR systems.
 - Tombkeeper_VR is a small-scale prototype, and further updates or enhancements may be added in the future.
-
----
-
-## Getting Started
-
-1. Download the executable for Windows.
-2. Connect your VR headset to your PC.
-3. Launch the game and step into the tomb!
