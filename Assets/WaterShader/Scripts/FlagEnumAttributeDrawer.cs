@@ -1,12 +1,15 @@
 ﻿#region Using statements
 
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
+#endif
 
 #endregion
 
 namespace Bitgem.Editor
 {
+#if UNITY_EDITOR
     [CustomPropertyDrawer(typeof(Core.FlagEnumAttribute))]
     public class EnumFlagsAttributeDrawer : PropertyDrawer
     {
@@ -15,4 +18,5 @@ namespace Bitgem.Editor
             _property.intValue = EditorGUI.MaskField(_position, _label, _property.intValue, _property.enumNames);
         }
     }
+#endif
 }

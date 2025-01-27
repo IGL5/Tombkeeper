@@ -1,0 +1,11 @@
+# ninja log v5
+66	245	7594650324537509	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	bfe6c4a5c342d972
+15	592	7594650328397693	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f46bd01222a51e0c
+33	601	7594650328636790	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	19d0fc1d2103562f
+246	602	7594650326907794	C:/Users/ikerg/Documents/Unity/Tombkeeper/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4n176844/obj/arm64-v8a/libswappywrapper.so	48e48bd25e5d0b0
+43	641	7594650329071683	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	7d16bce38c25f72e
+53	695	7594650329436012	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	2f6c170868e183aa
+8	696	7594650329532995	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	974b309d9dff01e2
+23	812	7594650330760652	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	c1d0bbfafdd164a5
+0	863	7594650331203621	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	1ac515edabff86a6
+863	1078	7594650332814269	C:/Users/ikerg/Documents/Unity/Tombkeeper/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4n176844/obj/arm64-v8a/libgame.so	fbcea4d2ad0ddad0
